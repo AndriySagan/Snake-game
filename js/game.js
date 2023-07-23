@@ -43,7 +43,7 @@ function draw() {
   ctx.drawImage(foodImg, food.x * gridSize, food.y * gridSize);
 
   // Малювання балів
-  scoreDisplay.textContent = `Бали)): ${score}`;
+  scoreDisplay.textContent = `Бали: ${score}`;
 }
 
 // Функція оновлення гри
