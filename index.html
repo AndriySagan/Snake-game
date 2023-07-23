@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake_game made by AVSG</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+
+    <div class="main-container">
+        <div class="about-me-container">
+            <img class="logo" src="/img/logo.png" alt="logo" width="150">
+            <img src="/img/picture.png" alt="My photo" width="274">
+            <h2 class="my-name">Створено Андрієм Саган,
+                учасником марафону "Веброзробник майбутнього"</h2>
+            <ul class="about-me-list">
+                <li class="about-me-list-item">Написав цю гру з використанням ChatGPT</li>
+                <li class="about-me-list-item">Маю всі шанси стати розробником майбутнього</li>
+                <li class="about-me-list-item">Докладаю багато зусиль для поглиблення вже набутих навичок</li>
+                <li class="about-me-list-item">Шукаю можливості для практичного використання набутих знань</li>
+            </ul>
+        </div>
+        <div class="game-container">
+            <h1 class="game-title">Гра “Змійка”</h1>
+            <div class="game-area">
+                <canvas class="game-canvas" width="400" height="400"></canvas>
+                <div class="game-over" id="game-over-message">
+                    Гра закінчена! <br> Набрані бали: <br> <span id="final-score"></span>
+                </div>
+
+            </div>
+            <div class="game-score">Бали: 0</div>
+            <div class="game-controls">
+                <button class="game-start">Старт</button>
+                <button class="game-reset">Перезапуск</button>
+            </div>
+
+            <!-- Для 3 найкращих результатів -->
+            <div class="game-best">
+                <h3 class="game-best-title">Три найкращі результати</h3>
+                <ol class="best-scores"></ol>
+            </div>
+
+            <!-- Для історії останніх 10 результатів -->
+            <div class="game-history">
+                <h3 class="game-history-title">Історія останніх 10 результатів</h3>
+                <ul class="last-scores"></ul>
+            </div>
+        </div>
+        <div class="instructions-container">
+            <h3 class="instructions-title">Інструкції до гри</h3>
+            <ul class="instructions-list">
+                <li class="instructions-list-item">Використовуйте стрілки на клавіатурі (вліво, вправо, вгору, вниз) для
+                    керування рухом
+                    змійки.
+                    Натискайте стрілку в
+                    потрібному напрямку, щоб змінити напрямок руху змійки.</li>
+                <li class="instructions-list-item">Мета гри - збирати їжу, яка з'являється на полі гри. Коли голова
+                    змійки зіткнеться з їжею,
+                    змійка
+                    зростатиме у довжину.</li>
+                <li class="instructions-list-item">Уважно плануйте свої рухи, оскільки гра закінчується, якщо змійка
+                    зіткнеться зі стіною або
+                    своїм власним тілом.</li>
+            </ul>
+        </div>
+    </div>
+    <script src="/js/game.js"></script>
+
+</body>
+
+</html>
