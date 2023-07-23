@@ -74,7 +74,8 @@ body {
 
 .game-canvas {
   border: 1px solid #9eadf2;
-  background: #fff;
+  background-image: url(/img/fon2.jpg);
+  background-repeat: repeat;
 }
 
 .game-score {
@@ -215,4 +216,11 @@ body {
   content: "-"; /* Замінити маркер на тире */
   position: absolute;
   left: 0;
+}
+
+#final-score {
+  color: #ff6b0a;
+  font-size: 24px;
+  font-weight: 700;
+  font-style: italic;
 }
